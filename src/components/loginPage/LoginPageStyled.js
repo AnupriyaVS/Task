@@ -91,6 +91,7 @@ export const Button = styled.div`
         background-color:#3D3D3D ;
         color:white;
         font-size: 18px;
+        cursor: pointer;
     }
 `
 export const Row = styled.div`

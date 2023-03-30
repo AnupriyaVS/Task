@@ -5,9 +5,12 @@ import facebook from '../images/Circle Button.png'
 import google from '../images/google.png'
 import ins from '../images/in.png'
 import tweet from '../images/Tweet.png'
+import { useNavigate } from 'react-router'
 
 
 function LoginPage() {
+ const navigate = useNavigate();
+
   return (
     <Container>
         <Left>
@@ -24,7 +27,7 @@ function LoginPage() {
         <label>Keep me signed in</label>
         </CheckBox>
         <Button>
-            <button>Sign in</button>
+            <button onClick={()=>navigate("/home")}>Sign in</button>
         </Button>
         <Row>
         <Break></Break>
